@@ -12,7 +12,7 @@ class Integer
   end
 end
 
-get "/:number" do
+get '/:number' do
   content_type :json
   number = params[:number].to_i
   { number: number,
